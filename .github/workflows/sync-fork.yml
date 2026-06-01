@@ -8,7 +8,7 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 解决 Node.js 20 警告
     steps:
       - name: Checkout 仓库（拉取完整历史）
-        uses: actions/checkout@v4.2.0  # 升级到兼容 Node.js 24 的版本
+        uses: actions/checkout@v6.0.2  # 升级到兼容 Node.js 24 的版本
         with:
           fetch-depth: 0
           token: ${{ github.token }}  # 确保权限
